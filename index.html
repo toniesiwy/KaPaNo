@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamień, Papier, Nożyce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kamień, Papier, Nożyce</h1>
+        <div class="scoreboard">
+            <div class="score player">
+                <h2>Twój wynik</h2>
+                <p id="player-score">0</p>
+            </div>
+            <div class="score computer">
+                <h2>Wynik komputera</h2>
+                <p id="computer-score">0</p>
+            </div>
+        </div>
+        <div class="choices">
+            <button class="choice" data-choice="rock">🪨 Kamień</button>
+            <button class="choice" data-choice="paper">📄 Papier</button>
+            <button class="choice" data-choice="scissors">✂️ Nożyce</button>
+        </div>
+        <p id="message"></p>
+        <button id="restart" class="hidden">Zagraj ponownie</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
