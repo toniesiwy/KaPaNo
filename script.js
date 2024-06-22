@@ -31,14 +31,14 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (result === 'win') {
             playerScore++;
-            messageElem.textContent = `You won! Computer chose ${computerChoice}.`;
+            messageElem.textContent = `Wygrałeś! Komputer wybrał ${computerChoice}.`;
             messageElem.style.color = '#2ecc71';
         } else if (result === 'lose') {
             computerScore++;
-            messageElem.textContent = `You lost! Computer chose ${computerChoice}.`;
+            messageElem.textContent = `Przegrałeś! Komputer wybrał ${computerChoice}.`;
             messageElem.style.color = '#e74c3c';
         } else {
-            messageElem.textContent = `Draw! Computer also chose ${computerChoice}.`;
+            messageElem.textContent = `Remis! Komputer wybrał również ${computerChoice}.`;
             messageElem.style.color = '#f1c40f';
         }
 
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const endGame = () => {
         choices.forEach(choice => choice.disabled = true);
         restartButton.classList.remove('hidden');
-        messageElem.textContent += playerScore === winLimit ? ' Congratulations, You won the game!' : ' Unfortunately, You lost the game.';
+        messageElem.textContent += playerScore === winLimit ? ' Gratulacje, wygrałeś grę!' : ' Niestety, przegrałeś grę.';
     };
 
     const resetGame = () => {
